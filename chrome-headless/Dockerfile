@@ -55,4 +55,4 @@ EXPOSE 9222
 # Autorun chrome headless with no GPU
 ENTRYPOINT [ "google-chrome-stable" ]
 
-CMD [ "--headless", "--disable-gpu", "--no-sandbox", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=9222", "--disable-translate", "--disable-extensions", "--enable-dom-distiller", "--enable-distillability-service", "--enable-zero-copy", "--bwsi", "--disable-search-geolocation-disclosure", "--aggressive-cache-discard", "--aggressive-tab-discard", "--use-mobile-user-agent", "--user-data-dir", "--disable-web-security", "--allow-file-access-from-files", "chrome://dom-distiller" ]
+CMD [ "--headless", "--repl", "--disable-gpu", "--no-sandbox", "--remote-debugging-address=0.0.0.0", "--remote-debugging-port=9222", "--disable-translate", "--disable-extensions", "--enable-dom-distiller", "--enable-distillability-service", "--enable-zero-copy", "--bwsi", "--disable-search-geolocation-disclosure", "--aggressive-cache-discard", "--aggressive-tab-discard", "--use-mobile-user-agent", "--user-data-dir", "--disable-web-security", "--allow-file-access-from-files", "chrome://dom-distiller" ]
